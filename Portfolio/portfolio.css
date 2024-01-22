@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  --boldFont: "Archivo Black", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.banner {
+  padding: 32px;
+  height: 15%;
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: rgb(165, 122, 206);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+#name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  padding: 8px;
+  font-family: var(--boldFont);
+  color: white;
+  /* line-height: 30px; */
+  font-size: 52px;
+  border-right: solid 2px;
+}
+#yourname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#student {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--poppins);
+  font-size: 32px;
+  letter-spacing: 20px;
+  text-align: justify;
+}
+.leftPanel p {
+  font-family: var(--poppins);
+  font-size: 18px;
+  text-align: justify;
+}
+
+.details {
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+  justify-content: space-evenly;
+}
+.leftPanel {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.heading {
+  font-family: var(--boldFont);
+  font-size: 32px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+}
+.detail {
+  display: flex;
+}
+.build {
+  font-family: var(--poppins);
+  font-size: 18px;
+}
+.time {
+  color: rgb(98, 98, 98);
+}
+
+.name {
+  font-weight: 600;
+  margin-right: 12px;
+}
+.rightPanel {
+  width: 50%;
+}
