@@ -79,6 +79,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  flex: 3;
 }
 
 .heading {
@@ -106,5 +107,11 @@ body::-webkit-scrollbar {
   margin-right: 12px;
 }
 .rightPanel {
-  width: 50%;
+  flex: 2;
+  /* width: 50%; */
+}
+
+#interestsList {
+  /* background-color: rebeccapurple; */
+  list-style-type: circle;
 }
