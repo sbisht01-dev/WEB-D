@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <form action="registration_process.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required />
+
+      <label for="sex">Sex:</label>
+      <input type="radio" id="male" name="sex" value="male" checked />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="sex" value="female" />
+      <label for="female">Female</label>
+
+      <label for="dob">Date of Birth:</label>
+      <select id="day" name="day">
+        <option value="">Day</option>
+        <!-- Add day options here -->
+      </select>
+      <select id="month" name="month">
+        <option value="">Month</option>
+        <!-- Add month options here -->
+      </select>
+      <select id="year" name="year">
+        <option value="">Year</option>
+        <!-- Add year options here -->
+      </select>
+
+      <label for="languages">Languages Known:</label>
+      <input type="checkbox" id="english" name="language[]" value="english" />
+      <label for="english">English</label>
+      <input type="checkbox" id="spanish" name="language[]" value="spanish" />
+      <label for="spanish">Spanish</label>
+      <input type="checkbox" id="french" name="language[]" value="french" />
+      <label for="french">French</label>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required />
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
